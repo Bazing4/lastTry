@@ -7,5 +7,5 @@ Notas a serem tomadas:
     Ejs é o template.
     Mongoose é o modelador de objetos do Mongo.
     Passport serve para a autenticação das diversas maneiras(parece um strategy)
-    Connect-flash allows for passing session flashdata messages.
-    Bcrypt-nodejs gives us the ability to hash the password.
+
+Testando deploy...
