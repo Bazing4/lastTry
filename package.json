@@ -12,11 +12,7 @@
     "passport-google-oauth" : "~0.1.5",
     "connect-flash" : "~0.1.1",     
     "bcrypt-nodejs" : "latest",
-    "mocha": "*",
-    "xunit-file": "0.0.5",
-    "istanbul": "0.3.0",  
     "morgan": "~1.0.0",
-    "chai": "*",
     "body-parser": "~1.0.0",
     "cookie-parser": "~1.0.0",
     "method-override": "~1.0.0",
@@ -25,5 +21,18 @@
   ,
   "scripts": {
     "mocha": "./node_modules/.bin/mocha"
+  },
+  
+  "devDependencies": {
+    "chai": "*",
+    "supertest": "*",
+    "mkdirp": "*",
+    "mocha": "*",
+    "xunit-file": "0.0.5",
+    "istanbul": "0.3.0",
+    "jasmine-before-all": "*",
+    "jasmine-node": "*",
+    "jasmine-reporters": "~1.0.0",
+    "protractor": "^1.0.0"
   }
 }
