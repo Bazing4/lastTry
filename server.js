@@ -4,7 +4,8 @@
 // get all the tools we need
 var express  = require('express');
 var app      = express();
-var port     = process.env.PORT || 8080;
+var port             = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 var mongoose = require('mongoose');
 var passport = require('passport');
 var flash    = require('connect-flash');
@@ -17,7 +18,17 @@ var session      = require('express-session');
 var configDB = require('./config/database.js');
 
 // configuration ===============================================================
-mongoose.connect('mongodb://localhost/lasttry'); // connect to our database
+    var url = configDB.url;
+    if( process.env.OPENSHIFT_MONGODB_DB_PASSWORD ){
+        url =   "mongodb://" +
+                process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +
+                process.env.OPENSHIFT_MONGODB_DB_PASSWORD + "@" +
+                process.env.OPENSHIFT_MONGODB_DB_HOST + ':' +
+                process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
+                process.env.OPENSHIFT_APP_NAME;
+    }
+    console.log(url);
+mongoose.connect(url); // connect to our database
 
 require('./config/passport')(passport); // pass passport for configuration
 
