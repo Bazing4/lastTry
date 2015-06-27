@@ -6,7 +6,7 @@ module.exports = {
     'facebookAuth' : {
         'clientID'      : '922608617799776', // your App ID
         'clientSecret'  : '6aaf2ad06b8fd42a8adaa31ba9ac1fe5', // your App Secret
-        'callbackURL'   : 'http://lasttry-lasttry.rhcloud.com//auth/facebook/callback'
+        'callbackURL'   : 'http://lasttry-lasttry.rhcloud.com/auth/facebook/callback'
     },
 
     'twitterAuth' : {
