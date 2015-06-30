@@ -6,9 +6,8 @@ Notas a serem tomadas:
     Express é o framework utilizado.
     Ejs é o template.
     Mongoose é o modelador de objetos do Mongo.
-    Passport serve para a autenticação das diversas maneiras(parece um strategy)
+    Passport serve para a autenticação das diversas maneiras(parece um strategy).
+    CodeShip utilizado para integração contínua.
+    OpenShift utilizado para deploy automático.
+    Mocha serve para contagem de testes.
 
-Testando deploy...
-Testando deploy 2....
-Testando deploy 3....
-Deploy sem 
