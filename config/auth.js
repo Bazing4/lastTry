@@ -1,11 +1,9 @@
-// config/auth.js
 
-// expose our config directly to our application using module.exports
 module.exports = {
 
     'facebookAuth' : {
-        'clientID'      : '922608617799776', // your App ID
-        'clientSecret'  : '6aaf2ad06b8fd42a8adaa31ba9ac1fe5', // your App Secret
+        'clientID'      : '922608617799776', 
+        'clientSecret'  : '6aaf2ad06b8fd42a8adaa31ba9ac1fe5', 
         'callbackURL'   : 'http://lasttry-lasttry.rhcloud.com/auth/facebook/callback'
     },
 

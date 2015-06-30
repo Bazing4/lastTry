@@ -47,6 +47,11 @@ describe( "PI", function() {
             var valorRetornado = PI.divideDoisNumeros(20, 2 );
             expect( valorEsperado ).to.equal( valorRetornado );
         });
+            it( "Deveria retornar 30, mas esse teste tem que falhar retornando 110", function(){
+            var valorEsperado = 30;    
+            var valorRetornado = PI.quebraTeste(100, 10 );
+            expect( valorEsperado ).to.equal( valorRetornado );
+        });
 });
 
 });
