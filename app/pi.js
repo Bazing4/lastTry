@@ -45,6 +45,21 @@ var PI = {
 
                     return valor;
         },  
+        
+        subtraiDoisNumeros: function(num1,num2) {
+                var resultado= Number(num1)-Number(num2);
+                return resultado;             
+        },
+        
+        multiplicaDoisNumeros: function(num1,num2) {
+                var resultado= Number(num1)*Number(num2);
+                return resultado;             
+        },
+        
+        divideDoisNumeros: function(num1,num2) {
+                var resultado= Number(num1)/Number(num2);
+                return resultado;             
+        }
             };
 return PI;
 };
